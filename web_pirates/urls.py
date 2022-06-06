@@ -27,5 +27,4 @@ urlpatterns = [
     path('home/adicionar', salvar_tesouro.as_view(), name='salvar_tesouro'),
     path('editar/<int:id>', editar_tesouro.as_view(), name="editar_tesouros"),
     path('excluir/<int:id>', excluir_tesouros.as_view(), name="excluir_tesouros"),
-    
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

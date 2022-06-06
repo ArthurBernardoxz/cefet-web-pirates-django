@@ -52,7 +52,6 @@ class editar_tesouro(View):
             return HttpResponseRedirect(reverse('listar_tesouros'))
         else:
             return render(request,"salvar_tesouro.html",{"form":form, "tesouro": tesouro})
-        
 
 class excluir_tesouros(View):
     def get(self, request, id):
